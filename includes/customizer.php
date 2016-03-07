@@ -1,13 +1,19 @@
 <?php
 
-add_filter( 'spine_option_defaults', 'extension_spine_option_defaults' );
+add_filter( 'spine_option_defaults', 'cahnrs_spine_option_defaults' );
 /**
- * Reset certain Spine customizer option defaults.
+ * Set, reset certain Spine customizer option defaults.
  */
-function extension_spine_option_defaults( $defaults ) {
+function cahnrs_spine_option_defaults( $defaults ) {
 	$defaults['bleed'] = false;
 	$defaults['articletitle_show'] = false;
 	$defaults['articletitle_header'] = true;
+	$defaults['cahnrs_header_bg_color'] = '';
+	$defaults['cahnrs_header_bg_vellum'] = '';
+	$defaults['cahnrs_header_fixed'] = '';
+	$defaults['cahnrs_header_unit_parent'] = '';
+	$defaults['cahnrs_tooling'] = '0';
+	$defaults['cahnrs_fixed_header_behavior'] = '';
 	return $defaults;
 }
 
